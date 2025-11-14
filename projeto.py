@@ -13,7 +13,7 @@ class Pessoa:
 #                          Area de criação de funções para o objeto
 def adicionar():
     while True:
-        user_name = input('Digite o seu nome: ').lower()
+        user_name = input('Digite o seu nome: ').upper()
         if user_name.isalpha():
             print('Nome salvo com sucesso!')
             break
@@ -59,7 +59,7 @@ while True:
 
     usuario = adicionar()
     user_list.append(usuario)
-    continuar = input('Deseja continuar?\n  ( s | n ):').upper()
+    continuar = input('Deseja continuar?\n  ( s | n ):').lower()
     if continuar in ('s' , 'n'):
         continuar != 's'
         print('Informe o proximo cadastro')
